@@ -103,7 +103,7 @@ const BmrCalculator: React.FC = () => {
           <h3>
             ※試作なので運動強度が計算に入っていません。下記画像を参考に数値を掛けてください。
           </h3>
-          <img src="images/kakeritu.jpg" alt="かけりつ一覧表"></img>
+          <img src="/images/kakeritu.jpg" alt="かけりつ一覧表"></img>
           <h3>
             ☆一日に摂取した栄養素の合計値がこれを下回っていれば体重は減少していくことになります☆
           </h3>
