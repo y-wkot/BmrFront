@@ -35,7 +35,7 @@ const BmrCalculator: React.FC = () => {
 
     try {
       const response = await axios.post<BmrResponse>(
-        "https://bmrdocker.onrender.com",
+        "https://bmrdocker.onrender.com/api/calculate",
         requestData
       );
       setBmr(response.data.bmr);
