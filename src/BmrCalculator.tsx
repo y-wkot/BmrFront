@@ -35,7 +35,7 @@ const BmrCalculator: React.FC = () => {
 
     try {
       const response = await axios.post<BmrResponse>(
-        "http://localhost:8080/api/calculate",
+        "https://bmrdocker.onrender.com",
         requestData
       );
       setBmr(response.data.bmr);
@@ -46,7 +46,7 @@ const BmrCalculator: React.FC = () => {
 
   return (
     <div>
-      <h1>あなたの基礎代謝を計算します</h1>
+      <h1>（試作品）あなたの基礎代謝を計算します</h1>
       <h2>基礎代謝とは、一日に必ず消費するカロリーです！</h2>
       <div>
         <label>
@@ -100,6 +100,13 @@ const BmrCalculator: React.FC = () => {
       {bmr !== null && (
         <div>
           <h2>あなたの基礎代謝: {bmr.toFixed(2)} kcalです！</h2>
+          <h3>
+            ※試作なので運動強度が計算に入っていません。下記画像を参考に数値を掛けてください。
+          </h3>
+          <img src="images/kakeritu.jpg" alt="かけりつ一覧表"></img>
+          <h3>
+            ☆一日に摂取した栄養素の合計値がこれを下回っていれば体重は減少していくことになります☆
+          </h3>
         </div>
       )}
     </div>
