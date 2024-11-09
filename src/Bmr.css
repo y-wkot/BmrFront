@@ -74,12 +74,12 @@ button:disabled {
   background-color: #555;
 }
 
-/* 画像を中央揃え */
+/* 画像を中央揃えして幅を広げる */
 img {
-  max-width: 100%;
+  max-width: 80%; /* 画像がコンテナ幅の80%まで広がるよう設定 */
   height: auto;
   display: block;
-  margin: 0 auto; /* これで中央揃え */
+  margin: 0 auto;
 }
 
 /* メディアクエリ */
@@ -90,5 +90,8 @@ img {
   .form-group,
   button {
     width: 100%; /* スマートフォン画面で全幅 */
+  }
+  img {
+    max-width: 100%; /* スマートフォン画面で画像を全幅に */
   }
 }
