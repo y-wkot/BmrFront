@@ -39,42 +39,45 @@
 
 .read-the-docs {
   color: #888;
-} */
-
-/* グローバルスタイルの設定 */
+}
+/* グローバルリセット */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
+body,
+html {
   font-family: Arial, sans-serif;
   background-color: #333;
   color: #fff;
   text-align: center;
 }
 
-/* コンテナのスタイル */
+/* メインコンテナのスタイル */
 .container {
-  max-width: 600px;
+  width: 90%; /* 画面幅の90%を使用 */
+  max-width: 600px; /* 最大幅を600pxに制限（デスクトップでの横長を防ぐ） */
   margin: 0 auto;
   padding: 20px;
 }
 
-/* タイトルのスタイル */
-h1 {
-  font-size: 1.8em;
+/* テキストスタイル */
+h1,
+h2,
+h3 {
   margin-bottom: 10px;
 }
 
-/* 説明テキスト */
-p {
+/* 各フォームのラベルと入力フィールドのスタイル */
+label {
+  display: block;
+  margin-bottom: 10px;
   font-size: 1em;
-  margin-bottom: 20px;
 }
 
-/* 入力フィールドのスタイル */
+/* インプットとセレクトボックスのスタイル */
 input,
 select {
   width: 100%;
@@ -98,45 +101,66 @@ button {
   margin-top: 10px;
 }
 
-/* ボタンのホバースタイル */
-button:hover {
-  background-color: #0056b3;
+button:disabled {
+  background-color: #555;
+}
+
+/* 画像のスタイル */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* エラーメッセージとローディングのスタイル */
+p {
+  font-size: 0.9em;
+  color: red;
+  margin: 10px 0;
 }
 
 /* 結果表示のスタイル */
 .result {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 20px;
 }
 
-/* 運動強度リストのスタイル */
-.activity-level {
-  text-align: left;
-  font-size: 0.9em;
-  line-height: 1.5;
-  margin-top: 20px;
-}
-
-/* レスポンシブ対応（画面幅が600px以下の場合） */
-@media (max-width: 600px) {
+/* 画面幅が768px以下のときの調整 */
+@media (max-width: 768px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
-  .container {
-    padding: 10px;
-  }
-
-  .activity-level {
-    font-size: 0.8em;
-  }
-
-  .result {
-    font-size: 1.2em;
+  h2,
+  h3 {
+    font-size: 1em;
   }
 
   button {
     padding: 12px;
     font-size: 1em;
+  }
+}
+
+/* 画面幅が480px以下のときの調整 */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2,
+  h3 {
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  label,
+  input,
+  select {
+    font-size: 0.9em;
   }
 }
