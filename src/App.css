@@ -14,8 +14,8 @@ html {
 }
 
 .container {
-  max-width: 600px; /* デスクトップでの最大幅 */
-  margin: 0 auto; /* 中央揃え */
+  max-width: 100%; /* デスクトップでの最大幅 */
+  margin: auto; /* 中央揃え */
   padding: 20px;
   text-align: center;
 }
@@ -40,13 +40,13 @@ label {
 input,
 select {
   width: 100%; /* コンテナの幅に自動調整 */
-  max-width: 300px; /* 入力欄の最大幅 */
+  max-width: 150px; /* 入力欄の最大幅 */
   padding: 10px;
   font-size: 1em;
   margin-top: 5px;
   border-radius: 5px;
   border: 1px solid #555;
-  text-align: center;
+  text-align: left;
 }
 
 button {

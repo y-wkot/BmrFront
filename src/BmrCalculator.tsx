@@ -62,8 +62,9 @@ const BmrCalculator: React.FC = () => {
 
   return (
     <div className="container">
-      <h1>☆試作品☆あなたの基礎代謝を計算します</h1>
-      <h2>基礎代謝とは、一日に必ず消費するカロリーです！</h2>
+      <h1>☆試作品☆</h1>
+      <h2>あなたの基礎代謝を計算します</h2>
+      <h3>基礎代謝とは、一日に必ず消費するカロリーです！</h3>
       <div>
         <label>
           性別:
