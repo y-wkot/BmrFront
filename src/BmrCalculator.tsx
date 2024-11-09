@@ -66,7 +66,7 @@ const BmrCalculator: React.FC = () => {
       <h1>☆試作品☆</h1>
       <h2>あなたの基礎代謝を計算します</h2>
       <h3>基礎代謝とは、一日に必ず消費するカロリーです！</h3>
-      <div>
+      <div className="form-group">
         <label>
           性別:
           <select value={gender} onChange={(e) => setGender(e.target.value)}>
@@ -75,7 +75,7 @@ const BmrCalculator: React.FC = () => {
           </select>
         </label>
       </div>
-      <div>
+      <div className="form-group">
         <label>
           年齢:
           <br />
@@ -89,7 +89,7 @@ const BmrCalculator: React.FC = () => {
           />
         </label>
       </div>
-      <div>
+      <div className="form-group">
         <label>
           身長 (cm):
           <br />
@@ -103,7 +103,7 @@ const BmrCalculator: React.FC = () => {
           />
         </label>
       </div>
-      <div>
+      <div className="form-group">
         <label>
           体重 (kg):
           <br />
@@ -117,7 +117,7 @@ const BmrCalculator: React.FC = () => {
           />
         </label>
       </div>
-      <div>
+      <div className="form-group">
         <label>
           運動強度（倍率）:
           <br />
