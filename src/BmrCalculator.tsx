@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import "./Bmr.css"; // CSSファイルをインポート
 
 interface BmrRequest {
   gender: string;
@@ -77,6 +78,7 @@ const BmrCalculator: React.FC = () => {
       <div>
         <label>
           年齢:
+          <br />
           <input
             type="number"
             value={age}
@@ -90,6 +92,7 @@ const BmrCalculator: React.FC = () => {
       <div>
         <label>
           身長 (cm):
+          <br />
           <input
             type="number"
             value={height}
@@ -103,6 +106,7 @@ const BmrCalculator: React.FC = () => {
       <div>
         <label>
           体重 (kg):
+          <br />
           <input
             type="number"
             value={weight}
@@ -116,6 +120,7 @@ const BmrCalculator: React.FC = () => {
       <div>
         <label>
           運動強度（倍率）:
+          <br />
           <input
             type="number"
             value={exerciseIntensity}
