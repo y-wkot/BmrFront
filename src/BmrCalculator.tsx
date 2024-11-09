@@ -20,6 +20,8 @@ const BmrCalculator: React.FC = () => {
   const [weight, setWeight] = useState<number | "">("");
   const [bmr, setBmr] = useState<number | null>(null);
   const [exerciseIntensity, setExerciseIntensity] = useState<number | "">("");
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
 
   const calculateBmr = async () => {
     // 全部に値があるか確認させる
@@ -41,14 +43,20 @@ const BmrCalculator: React.FC = () => {
       exerciseIntensity: Number(exerciseIntensity),
     };
 
+    setLoading(true); // 計算中
+    setError(false); // エラーをリセット
+
     try {
       const response = await axios.post<BmrResponse>(
         "https://bmrdocker.onrender.com/api/calculate",
         requestData
       );
-      setBmr(response.data.bmr);
+      setBmr(response.data.bmr); // 結果を設定
     } catch (error) {
-      console.error("Error calculating BMR:", error);
+      console.error("BMR計算エラー:", error);
+      setError(true); // 通信エラーの場合
+    } finally {
+      setLoading(false); // 計算終了
     }
   };
 
@@ -121,8 +129,16 @@ const BmrCalculator: React.FC = () => {
           <img src="/images/kakeritu.jpg" alt="かけりつ一覧表"></img>
         </label>
       </div>
-      <button onClick={calculateBmr}>計算結果を表示</button>
-      {bmr !== null && (
+      <button onClick={calculateBmr} disabled={loading}>
+        {loading ? "計算中…" : "計算結果を表示"}
+      </button>
+      {loading && <p>計算中…</p>}
+      {error && (
+        <p style={{ color: "red" }}>
+          通信エラーが発生しました。再試行してください。
+        </p>
+      )}
+      {bmr !== null && !error && (
         <div>
           <h2>あなたの基礎代謝: {bmr.toFixed(2)} kcalです！</h2>
           <h3>
