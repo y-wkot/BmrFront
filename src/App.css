@@ -59,7 +59,8 @@ html {
 .container {
   width: 90%; /* 画面幅の90%を使用 */
   max-width: 100; /* 最大幅を600pxに制限（デスクトップでの横長を防ぐ） */
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   padding: 20px;
 }
 
