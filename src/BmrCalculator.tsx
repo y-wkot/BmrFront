@@ -110,13 +110,14 @@ const BmrCalculator: React.FC = () => {
           <input
             type="number"
             value={exerciseIntensity}
-            placeholder="下の一覧から近しい数値を入力してください"
+            placeholder="入力してください"
             onChange={(e) =>
               setExerciseIntensity(
                 e.target.value === "" ? "" : Number(e.target.value)
               )
             }
           />
+          <div>運動強度は、一覧表から近しい数値を入力してください</div>
           <img src="/images/kakeritu.jpg" alt="かけりつ一覧表"></img>
         </label>
       </div>
