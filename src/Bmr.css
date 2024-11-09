@@ -20,7 +20,7 @@ html {
   padding: 20px;
   margin: 0 auto;
   width: 100%; /* 全画面幅に合わせる */
-  max-width: 800px; /* タブレット以上の画面幅での最大幅 */
+  max-width: 1000px; /* タブレット以上の画面幅での最大幅 */
 }
 
 h1,
@@ -72,6 +72,14 @@ button {
 
 button:disabled {
   background-color: #555;
+}
+
+/* 画像を中央揃え */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* これで中央揃え */
 }
 
 /* メディアクエリ */
