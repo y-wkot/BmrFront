@@ -131,9 +131,9 @@ const BmrCalculator: React.FC = () => {
             }
           />
           <div>運動強度は、一覧表から近しい数値を入力してください</div>
-          <img src="/images/kakeritu.jpg" alt="かけりつ一覧表"></img>
         </label>
       </div>
+      <img src="/images/kakeritu.jpg" alt="かけりつ一覧表"></img>
       <button onClick={calculateBmr} disabled={loading}>
         {loading ? "計算中…" : "計算結果を表示"}
       </button>
