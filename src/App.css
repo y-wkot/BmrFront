@@ -29,6 +29,7 @@ h3 {
   width: 100%;
   max-width: 200px;
   margin-bottom: 1em;
+  text-align: center; /* フォーム全体を中央揃えに */
 }
 
 label {
@@ -36,13 +37,13 @@ label {
   color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* ラベルと入力欄を中央揃えに */
   width: 100%;
 }
 
 input,
 select {
-  width: 50%;
+  width: 75%;
   padding: 0.5em;
   font-size: 1em;
   margin-top: 5px;
@@ -50,6 +51,7 @@ select {
   border: 1px solid #555;
   background-color: #222;
   color: #fff;
+  text-align: center; /* 入力値とplaceholderを中央揃えに */
 }
 
 button {
