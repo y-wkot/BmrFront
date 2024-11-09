@@ -6,6 +6,7 @@ interface BmrRequest {
   age: number;
   height: number;
   weight: number;
+  exerciseIntensity: number;
 }
 
 interface BmrResponse {
@@ -18,10 +19,16 @@ const BmrCalculator: React.FC = () => {
   const [height, setHeight] = useState<number | "">("");
   const [weight, setWeight] = useState<number | "">("");
   const [bmr, setBmr] = useState<number | null>(null);
+  const [exerciseIntensity, setExerciseIntensity] = useState<number | "">("");
 
   const calculateBmr = async () => {
     // 全部に値があるか確認させる
-    if (age === "" || height === "" || weight === "") {
+    if (
+      age === "" ||
+      height === "" ||
+      weight === "" ||
+      exerciseIntensity === ""
+    ) {
       console.error("All fields are required.");
       return;
     }
@@ -31,6 +38,7 @@ const BmrCalculator: React.FC = () => {
       age: Number(age),
       height: Number(height),
       weight: Number(weight),
+      exerciseIntensity: Number(exerciseIntensity),
     };
 
     try {
@@ -96,14 +104,26 @@ const BmrCalculator: React.FC = () => {
           />
         </label>
       </div>
+      <div>
+        <label>
+          運動強度（倍率）:
+          <input
+            type="number"
+            value={exerciseIntensity}
+            placeholder="下の一覧から近しい数値を入力してください"
+            onChange={(e) =>
+              setExerciseIntensity(
+                e.target.value === "" ? "" : Number(e.target.value)
+              )
+            }
+          />
+          <img src="/images/kakeritu.jpg" alt="かけりつ一覧表"></img>
+        </label>
+      </div>
       <button onClick={calculateBmr}>計算結果を表示</button>
       {bmr !== null && (
         <div>
           <h2>あなたの基礎代謝: {bmr.toFixed(2)} kcalです！</h2>
-          <h3>
-            ※試作なので運動強度が計算に入っていません。下記画像を参考に数値を掛けてください。
-          </h3>
-          <img src="/images/kakeritu.jpg" alt="かけりつ一覧表"></img>
           <h3>
             ☆一日に摂取した栄養素の合計値がこれを下回っていれば体重は減少していくことになります☆
           </h3>
