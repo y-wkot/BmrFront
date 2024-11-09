@@ -40,3 +40,103 @@
 .read-the-docs {
   color: #888;
 }
+
+/* グローバルスタイルの設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* コンテナのスタイル */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* タイトルのスタイル */
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* 説明テキスト */
+p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* 入力フィールドのスタイル */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+/* ボタンのスタイル */
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ボタンのホバースタイル */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 結果表示のスタイル */
+.result {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+/* 運動強度リストのスタイル */
+.activity-level {
+  text-align: left;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+/* レスポンシブ対応（画面幅が600px以下の場合） */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .activity-level {
+    font-size: 0.8em;
+  }
+
+  .result {
+    font-size: 1.2em;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1em;
+  }
+}
