@@ -76,7 +76,7 @@ button:disabled {
 
 /* 画像を中央揃えして幅を広げる */
 img {
-  max-width: 80%; /* 画像がコンテナ幅の80%まで広がるよう設定 */
+  max-width: 150%; /* 画像がコンテナ幅の80%まで広がるよう設定 */
   height: auto;
   display: block;
   margin: 0 auto;
