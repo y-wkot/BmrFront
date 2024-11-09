@@ -26,7 +26,7 @@ h3 {
 
 .form-group {
   width: 100%;
-  max-width: 400px; /* 各入力欄の最大幅を広く設定 */
+  max-width: 200px; /* 各入力欄の最大幅を広く設定 */
   margin-bottom: 1em;
 }
 
@@ -69,30 +69,25 @@ button:disabled {
 }
 
 /* 画像を中央揃えして幅を広げる */
+/* 画像のデフォルトスタイル */
 img {
-  max-width: 80%; /* 画像がコンテナ幅の80%まで広がるよう設定 */
+  width: 100%; /* 画像をコンテナ幅に合わせて表示 */
+  max-width: 600px; /* 画像が広がりすぎないように最大幅を指定 */
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* 大画面用スタイル */
-@media (min-width: 1000px) {
-  .container {
-    max-width: 1000px; /* 1000pxの幅に制限 */
+/* 大きい画面では画像の最大幅を縮小 */
+@media (min-width: 1024px) {
+  img {
+    max-width: 500px; /* 画面が大きい場合の最大幅 */
   }
 }
 
-/* スマホや小さい画面用スタイル */
+/* スマートフォンなど小さい画面では画像をフル幅で表示 */
 @media (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-  .form-group,
-  button {
-    width: 100%; /* スマートフォン画面で全幅 */
-  }
   img {
-    max-width: 100%; /* スマートフォン画面で画像を全幅に */
+    max-width: 100%; /* 小さい画面で画像を全幅に */
   }
 }
