@@ -57,18 +57,18 @@ html {
 
 /* メインコンテナのスタイル */
 .container {
-  width: 90%; /* 画面幅の90%を使用 */
-  max-width: 100; /* 最大幅を600pxに制限（デスクトップでの横長を防ぐ） */
-  margin-right: auto;
-  margin-left: auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto; /* 中央揃え */
   padding: 20px;
 }
 
-/* テキストスタイル */
+/* 見出しの中央揃え */
 h1,
 h2,
 h3 {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /* 各フォームのラベルと入力フィールドのスタイル */
@@ -76,22 +76,24 @@ label {
   display: block;
   margin-bottom: 10px;
   font-size: 1em;
+  text-align: left; /* ラベルは左寄せのまま */
 }
 
 /* インプットとセレクトボックスのスタイル */
 input,
 select {
-  width: 100%;
+  width: 50%; /* フィールドの幅を半分に */
   padding: 10px;
-  margin: 5px 0 20px;
+  margin: 5px auto 20px; /* 上下の余白を設定し、中央に */
   font-size: 1em;
   border-radius: 5px;
   border: 1px solid #555;
+  text-align: center; /* プレースホルダーと選択項目を中央寄せ */
 }
 
 /* ボタンのスタイル */
 button {
-  width: 100%;
+  width: 50%;
   padding: 15px;
   font-size: 1.2em;
   color: #fff;
@@ -135,6 +137,12 @@ p {
   h2,
   h3 {
     font-size: 1em;
+  }
+
+  input,
+  select,
+  button {
+    width: 70%; /* モバイルでは少し幅を広げる */
   }
 
   button {
