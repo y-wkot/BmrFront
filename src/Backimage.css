@@ -1,0 +1,41 @@
+.top-page {
+  background-image: url("./images/Shawn.jpg"); /* 画像のパスを指定 */
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* 文字色の調整 */
+  text-align: center;
+}
+
+.calculator-page {
+  background-image: url("./images/phil_heath.jpg"); /* 画像のパスを指定 */
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* 文字色の調整 */
+  text-align: center;
+}
+
+/* TopPageおよびCalculatorページの文字アウトライン */
+.top-page h1,
+.top-page h2,
+.calculator-page h1,
+.calculator-page h2,
+.calculator-page h3,
+.calculator-page p {
+  color: white; /* 文字色は白 */
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000,
+    /* 右上に黒い影 */ -1px 1px 0 #000, /* 左下に黒い影 */ 1px 1px 0 #000; /* 右下に黒い影 */
+}

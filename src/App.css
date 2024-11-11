@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -12,24 +12,43 @@
   padding: 20px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1920px; /* 全体的に幅を制限 */
+  text-align: center;
 }
 
 /* タイトルや説明 */
 h1,
 h2,
-h3 {
+h3,
+p {
   text-align: center;
   margin-bottom: 1em;
   color: #fff;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
 }
 
 /* フォームグループ */
 .form-group {
   width: 100%;
-  max-width: 200px;
+  max-width: auto; /* 入力フォームも幅を広げる */
   margin-bottom: 1em;
-  text-align: center; /* フォーム全体を中央揃えに */
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
+}
+
+.form-group small {
+  font-size: 1.2em; /* 説明文のフォントサイズを大きく調整 */
+  color: #ccc;
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
+}
+
+.result {
+  width: 100%;
+  max-width: auto; /* 結果表示もフォームと同じ幅にする */
+  margin-bottom: 1em;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
 }
 
 label {
@@ -37,13 +56,16 @@ label {
   color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center; /* ラベルと入力欄を中央揃えに */
+  align-items: center;
   width: 100%;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
 }
 
 input,
 select {
-  width: 75%;
+  width: 100%;
+  max-width: 200px;
   padding: 0.5em;
   font-size: 1em;
   margin-top: 5px;
@@ -51,12 +73,13 @@ select {
   border: 1px solid #555;
   background-color: #222;
   color: #fff;
-  text-align: center; /* 入力値とplaceholderを中央揃えに */
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
 }
 
 button {
   width: 100%;
-  max-width: 200px;
+  max-width: 300px; /* ボタン幅も他の要素と合わせる */
   padding: 0.75em;
   font-size: 1.1em;
   color: #fff;
@@ -74,30 +97,36 @@ button:disabled {
 /* 画像のスタイル */
 img {
   width: 100%;
-  max-width: 600px;
+  max-width: 600px; /* 画像の最大幅を調整 */
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
 /* メディアクエリ */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   #root {
     max-width: 1000px;
+    text-align: center;
   }
-  .form-group {
-    max-width: 500px;
+  .form-group,
+  .result {
+    max-width: 900px;
+    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
   #root {
     padding: 1rem;
+    text-align: center;
   }
   .container {
     padding: 10px;
+    max-width: 90%;
+    text-align: center;
   }
   img {
     max-width: 100%;
   }
-}
+} */
