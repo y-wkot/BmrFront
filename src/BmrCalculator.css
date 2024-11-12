@@ -3,8 +3,8 @@
   background-size: auto;
   background-position: top center;
   background-repeat: no-repeat;
-  width: 97vw;
-  height: 80vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +12,21 @@
   color: #f333; /* 文字色の調整 */
   text-align: center;
   /* overflow: hidden; */
+}
+
+.calculator-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding-top: 100%;
+  padding-right: 100%;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Calculatorページの文字アウトライン */
@@ -22,4 +37,29 @@
   color: white; /* 文字色は白 */
   text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000,
     /* 右上に黒い影 */ -1px 1px 0 #000, /* 左下に黒い影 */ 1px 1px 0 #000; /* 右下に黒い影 */
+}
+
+/* フォームグループ */
+.form-group {
+  width: 100%;
+  max-width: auto; /* 入力フォームも幅を広げる */
+  margin-bottom: 1em;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
+}
+
+.form-group small {
+  font-size: 1.2em; /* 説明文のフォントサイズを大きく調整 */
+  color: #ccc;
+  /* padding-right: 200px; */
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
+}
+
+.result {
+  width: 100%;
+  max-width: auto; /* 結果表示もフォームと同じ幅にする */
+  margin-bottom: 1em;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
+  /* padding-right: 200px; */
 }

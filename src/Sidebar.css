@@ -1,6 +1,6 @@
 .sidebar {
   height: auto; /* ビューポートの高さに合わせる */
-  width: 50px; /* 初期状態の幅 */
+  width: 40px; /* 初期状態の幅 */
   position: fixed; /* ビューポートに固定 */
   left: 0;
   top: 0;
@@ -10,7 +10,7 @@
   list-style: none; /* 項目の「・」を非表示 */
   padding: 0;
   margin: 0;
-  z-index: 1000; /* で前面に配置 */
+  z-index: 10; /* で前面に配置 */
 }
 
 .sidebar a {
@@ -23,7 +23,7 @@
 }
 
 .sidebar.open {
-  width: 125px; /* 開いた時の幅 */
+  width: 150px; /* 開いた時の幅 */
 }
 
 .vertical-text {

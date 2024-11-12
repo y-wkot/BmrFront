@@ -85,7 +85,7 @@ const BmrCalculator: React.FC = () => {
 
   // コンポーネントのレンダリング
   return (
-    <div className="container calculator-page">
+    <div className="calculator-page">
       <header>
         <h1>☆理想の身体を目指しましょう☆</h1>
         <h2>あなたの基礎代謝を計算します</h2>

@@ -1,22 +1,24 @@
 #root {
-  max-width: 1920px;
-  margin: 0;
+  width: 100%; /* 必要に応じて設定 */
+  max-width: 100%;
+  margin: 0 auto;
   padding: 0;
-  width: 100vw; /* 必要に応じて設定 */
-  height: 100vh; /* 必要に応じて設定 */
+  height: auto; /* 必要に応じて設定 */
+  text-align: center;
+  /* overflow: hidden; */
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  min-width: 90%;
-  padding-top: 100px;
-  padding-right: 00px;
-  padding: 20px;
+  height: 100%;
+  width: 100%;
+  padding-top: 100%;
+  padding-right: 100%;
+  padding: 0px;
   margin: 0;
-  max-width: 1920px; /* 全体的に幅を制限 */
+  max-width: 100%;
   text-align: center;
 }
 
@@ -30,31 +32,6 @@ p {
   color: #fff;
   /* padding-right: 200px; */
   text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
-}
-
-/* フォームグループ */
-.form-group {
-  width: 100%;
-  max-width: auto; /* 入力フォームも幅を広げる */
-  margin-bottom: 1em;
-  text-align: center;
-  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
-}
-
-.form-group small {
-  font-size: 1.2em; /* 説明文のフォントサイズを大きく調整 */
-  color: #ccc;
-  /* padding-right: 200px; */
-  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
-}
-
-.result {
-  width: 100%;
-  max-width: auto; /* 結果表示もフォームと同じ幅にする */
-  margin-bottom: 1em;
-  text-align: center;
-  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
-  /* padding-right: 200px; */
 }
 
 label {
