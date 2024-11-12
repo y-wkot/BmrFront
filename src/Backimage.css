@@ -10,15 +10,14 @@
   align-items: center;
   justify-content: center;
   color: white;
-  text-align: center;
-  overflow: hidden;
-  background-attachment: fixed;
+  /* text-align: center; */
+  /* overflow: hidden; */
 }
 
 .calculator-page {
   background-image: url("/images/マクレガー.jpg"); /* 画像のパスを指定 */
   background-size: cover;
-  background-position: center;
+  background-position: top left;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -29,7 +28,6 @@
   color: white; /* 文字色の調整 */
   text-align: center;
   overflow: hidden;
-  background-attachment: fixed;
 }
 
 /* TopPageおよびCalculatorページの文字アウトライン */

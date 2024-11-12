@@ -19,9 +19,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px;
+  /* padding: 200px; */
   padding-right: 200px;
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
   max-width: 1920px; /* 全体的に幅を制限 */
   text-align: center;
