@@ -148,23 +148,3 @@ img {
     max-width: 100%;
   }
 } */
-
-/* スマホ向けのメディアクエリ */
-@media (max-width: 768px) {
-  .top-page,
-  .calculator-page {
-    padding: 10px; /* モバイルではパディングを小さめに */
-  }
-
-  h1 {
-    font-size: 1.5rem; /* フォントサイズを縮小 */
-  }
-
-  h2 {
-    font-size: 1.2rem; /* フォントサイズを縮小 */
-  }
-
-  h3 {
-    font-size: 1rem; /* フォントサイズを縮小 */
-  }
-}
