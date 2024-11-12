@@ -1,6 +1,6 @@
 import axios from "axios"; // HTTPリクエスト用axiosライブラリ
 import React, { useEffect, useState } from "react"; // useState、useEffect
-import "./Backimage.css";
+import "./BmrCalculator.css";
 
 // 計算リクエストの型定義
 interface BmrRequest {

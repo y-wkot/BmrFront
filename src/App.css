@@ -1,30 +1,21 @@
 #root {
-  /* max-width: 1920px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  overflow: hidden;
-} */
-
-  /* #root { */
   max-width: 1920px;
   margin: 0;
   padding: 0;
   width: 100vw; /* 必要に応じて設定 */
   height: 100vh; /* 必要に応じて設定 */
-  /* overflow: hidden; */
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh; /* 修正 */
-  padding-top: 200px;
-  padding-right: 200px;
-  /* padding: 20px; */
+  min-height: 100vh;
+  min-width: 90%;
+  padding-top: 100px;
+  padding-right: 00px;
+  padding: 20px;
   margin: 0;
-  width: 100%;
   max-width: 1920px; /* 全体的に幅を制限 */
   text-align: center;
 }
@@ -35,10 +26,9 @@ h2,
 h3,
 p {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   color: #fff;
   /* padding-right: 200px; */
-  text-align: center;
   text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
 }
 
@@ -92,6 +82,7 @@ select {
   color: #fff;
   text-align: center;
   text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
+  outline: solid 2px white;
 }
 
 button {
@@ -105,6 +96,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  outline: solid 2px red;
 }
 
 button:disabled {

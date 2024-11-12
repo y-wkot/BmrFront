@@ -1,21 +1,32 @@
 .settings-page {
-  text-align: center; /* テキストを中央揃え */
-  padding: 20px;
+  background-image: url("/images/マクレガー.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  /* overflow: hidden; */
 }
 
 .settings-page button {
   margin-top: 20px; /* 上に余白を追加 */
 }
 
-.settings-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 水平方向の中央揃え */
-  justify-content: center; /* 垂直方向の中央揃え */
-  min-height: 100vh; /* 画面全体の中央に配置 */
-  padding: 20px;
+.settings-page h1,
+.settings-page h2 .settings-page p {
+  color: white; /* 文字色は白 */
+  text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000,
+    /* 右上に黒い影 */ -1px 1px 0 #000, /* 左下に黒い影 */ 1px 1px 0 #000; /* 右下に黒い影 */
 }
 
-.settings-page button {
-  margin-top: 20px;
+.settings-page h1 {
+  margin: 200px;
+  text-align: center;
+  margin-bottom: 16em;
 }

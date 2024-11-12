@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Backimage.css";
+import "./TopPage.css";
 
 const TopPage: React.FC = () => {
   const navigate = useNavigate();

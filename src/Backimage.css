@@ -1,6 +1,6 @@
 .top-page {
-  background-image: url("/images/Shawn.jpg");
-  background-size: cover;
+  background-image: url("/images/フィル.jpg");
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
@@ -15,7 +15,7 @@
 }
 
 .calculator-page {
-  background-image: url("/images/マクレガー.jpg"); /* 画像のパスを指定 */
+  background-image: url("/images/ショーン.jpg"); /* 画像のパスを指定 */
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
