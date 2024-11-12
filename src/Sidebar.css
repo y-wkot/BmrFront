@@ -1,0 +1,71 @@
+.sidebar {
+  height: 100vh; /* ビューポートの高さに合わせる */
+  width: 50px; /* 初期状態の幅 */
+  position: absolute; /* 絶対配置で上部に重ねる */
+  top: 0;
+  left: 0;
+  background-color: gray; /* 任意の背景色 */
+  color: #fff;
+  transition: width 0.3s ease; /* 幅の変化にアニメーションを適用 */
+  list-style: none; /* 項目の「・」を非表示 */
+  padding: 0;
+  margin: 0;
+  z-index: 1000; /* で前面に配置 */
+}
+
+.sidebar a {
+  color: black; /* 文字色を黒に指定 */
+  text-decoration: none; /* 下線の削除 */
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar.open {
+  width: 125px; /* 開いた時の幅 */
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  /* transform: rotate(180deg); 縦書きを逆に表示 */
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+}
+
+.toggle-button {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto; /* サイドバーの下部に配置 */
+}
+
+.list-items {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0 0 0;
+}
+
+.list-items li {
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar.collapsed .list-items {
+  display: none; /* メニューが折りたたまれた状態で非表示 */
+}
+
+.list-items li:hover {
+  background-color: #444;
+}

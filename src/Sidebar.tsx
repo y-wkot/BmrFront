@@ -1,23 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Sidebar.css";
 
 const Sidebar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // サイドバーの開閉状態を切り替える関数 toggle
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div
-      style={{
-        width: "200px",
-        height: "100vh",
-        backgroundColor: "skyblue",
-        padding: "10px",
-        position: "fixed",
-        top: 0,
-        left: 0,
-      }}
-    >
-      <h2>メニュー</h2>
-      <ul>
+    <div className={`sidebar ${isOpen ? "open" : "collapsed"}`}>
+      <div className="toggle-button" onClick={toggleSidebar}>
+        {isOpen ? (
+          "メニューを隠す"
+        ) : (
+          <span className="vertical-text">メニューを開く</span>
+        )}
+      </div>
+      {/* <h2>メニュー</h2> */}
+      <ul className="list-items">
         <li>
-          <Link to="/">ホーム ※トップページに戻る</Link>
+          <Link to="/">トップへ戻る</Link>
         </li>
         <li>
           <Link to="/calculate">基礎代謝計算ページ</Link>

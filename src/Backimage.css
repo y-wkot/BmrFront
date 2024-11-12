@@ -1,7 +1,7 @@
 .top-page {
   background-image: url("/images/Shawn.jpg"); /* 画像のパスを指定 */
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -16,7 +16,7 @@
 .calculator-page {
   background-image: url("/images/phil_heath.jpg"); /* 画像のパスを指定 */
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
