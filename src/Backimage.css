@@ -27,7 +27,7 @@
   justify-content: center;
   color: white; /* 文字色の調整 */
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* TopPageおよびCalculatorページの文字アウトライン */
