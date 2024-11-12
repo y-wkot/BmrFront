@@ -1,0 +1,21 @@
+.settings-page {
+  text-align: center; /* テキストを中央揃え */
+  padding: 20px;
+}
+
+.settings-page button {
+  margin-top: 20px; /* 上に余白を追加 */
+}
+
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平方向の中央揃え */
+  justify-content: center; /* 垂直方向の中央揃え */
+  min-height: 100vh; /* 画面全体の中央に配置 */
+  padding: 20px;
+}
+
+.settings-page button {
+  margin-top: 20px;
+}

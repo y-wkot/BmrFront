@@ -1,11 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./Settings.css";
 
 const Settings: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="settings-page">
       <h1>設定ページ</h1>
       <p>ここで各種設定ができます。</p>
 
