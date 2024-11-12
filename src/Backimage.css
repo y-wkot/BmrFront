@@ -1,5 +1,5 @@
 .top-page {
-  background-image: url("/images/Shawn.jpg"); /* 画像のパスを指定 */
+  background-image: url("/images/Shawn.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,12 +9,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white; /* 文字色の調整 */
+  color: white;
   text-align: center;
+  overflow: hidden;
+  background-attachment: fixed;
 }
 
 .calculator-page {
-  background-image: url("/images/phil_heath.jpg"); /* 画像のパスを指定 */
+  background-image: url("/images/マクレガー.jpg"); /* 画像のパスを指定 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,6 +28,8 @@
   justify-content: center;
   color: white; /* 文字色の調整 */
   text-align: center;
+  overflow: hidden;
+  background-attachment: fixed;
 }
 
 /* TopPageおよびCalculatorページの文字アウトライン */

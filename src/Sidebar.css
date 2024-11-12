@@ -1,9 +1,9 @@
 .sidebar {
   height: 100vh; /* ビューポートの高さに合わせる */
   width: 50px; /* 初期状態の幅 */
-  position: absolute; /* 絶対配置で上部に重ねる */
-  top: 0;
+  position: fixed; /* ビューポートに固定 */
   left: 0;
+  top: 0;
   background-color: gray; /* 任意の背景色 */
   color: #fff;
   transition: width 0.3s ease; /* 幅の変化にアニメーションを適用 */

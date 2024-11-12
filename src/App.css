@@ -1,8 +1,17 @@
 #root {
-  max-width: 1920px;
+  /* max-width: 1920px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  overflow: hidden;
+} */
+
+  /* #root { */
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* 必要に応じて設定 */
+  height: 100vh; /* 必要に応じて設定 */
   /* overflow: hidden; */
 }
 
@@ -10,7 +19,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 200px;
+  padding-right: 200px;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px; /* 全体的に幅を制限 */
@@ -42,7 +52,7 @@ p {
 .form-group small {
   font-size: 1.2em; /* 説明文のフォントサイズを大きく調整 */
   color: #ccc;
-  padding-right: 200px;
+  /* padding-right: 200px; */
   text-shadow: -1px -1px 0 #000, /* 左上に黒い影 */ 1px -1px 0 #000;
 }
 

@@ -11,9 +11,7 @@ const TopPage: React.FC = () => {
         基礎代謝計算・体重管理サイトへようこそ。現在ゲストモードのみの利用が可能です。
       </h1>
       <h2>ゲストモードにてご利用ください</h2>
-      <button onClick={() => navigate("/login")}>
-        ログインする ※未実装です※
-      </button>
+      <button onClick={() => navigate("/")}>ログインする ※未実装です※</button>
       <br />
       <button onClick={() => navigate("/calculate")}>ゲストモードで利用</button>
     </div>
