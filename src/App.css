@@ -20,9 +20,9 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh; /* 修正 */
-  /* padding-top: 200px;
-  padding-right: 200px; */
-  padding: 20px;
+  padding-top: 200px;
+  padding-right: 200px;
+  /* padding: 20px; */
   margin: 0;
   width: 100%;
   max-width: 1920px; /* 全体的に幅を制限 */
